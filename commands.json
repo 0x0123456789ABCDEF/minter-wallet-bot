@@ -1,0 +1,7 @@
+{
+    "receive": ["receive", "address", "get", "my", "me"]
+  , "send": ["send" ,"transfer" ,"tip" ,"to" ,"pay"]
+  , "balance": ["balance" ,"state" ,"check" ,"update" ,"mine"]
+  , "status": ["fee" ,"network" ,"status" ,"info"]
+  , "help": ["help" ,"docs" ,"doc" ,"manual" ,"mans" ,"man"]
+}
