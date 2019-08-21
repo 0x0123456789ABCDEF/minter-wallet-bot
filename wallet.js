@@ -124,6 +124,15 @@ bot.hears(/send\s+(([0-9]+([.][0-9]*)?|[.][0-9]+))\s+(\w+)\s+Mx(\w+)/i, async ({
     })
 })
 
+bot.hears(/📜|history|transactions|история|учет/i, async ({match, $, templates, keyboards, from, replyWithHTML, mixpanel}) => {
+  const user = await (await $("users")).findOne({id: from.id})
+  await mixpanel.track("history")
+  await replyWithHTML(
+    mustache.render(templates.history, user),
+    Extra.webPreview(false).markup(keyboards.default)
+  )
+})
+
 bot.hears(/🚧|projects|проекты|products|продукты|еще|ещё/i, async ({match, $, templates, keyboards, from, replyWithHTML, mixpanel}) => {
   const user = await (await $("users")).findOne({id: from.id})
   await mixpanel.track("projects")
