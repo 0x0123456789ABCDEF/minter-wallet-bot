@@ -1,7 +1,7 @@
 # Telegram Wallet Bot for Minter Network
-### v0.2.3
+### v0.2.6
 
-![@MinterBIPBot](./assets/0.2.4.jpg)
+![@MinterBIPBot](./assets/0.2.6.jpg)
 
 ## Описание
 
