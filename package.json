@@ -15,7 +15,7 @@
     "lodash": "^4.17.15",
     "minter-js-sdk": "^0.19.1",
     "minterjs-wallet": "^3.0.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.3.0-beta2",
     "mustache": "^3.0.1",
     "nodemon": "^1.19.1",
